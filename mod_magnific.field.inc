@@ -107,16 +107,16 @@ function mod_magnific_field_formatter_view($entity_type, $entity, $field, $insta
             $element = array(
                 '#theme' => 'mod_magnific_video',
                 '#items' => $items,
-                '#animate_style' => $settings['group_video']['animate_video'],
-                '#image_style_video' => $settings['group_video']['image_style_video'],
+                '#animate_style' => isset($settings['group_video']['animate_video']) ? $settings['group_video']['animate_video'] : '' ,
+                '#image_style_video' => isset($settings['group_video']['image_style_video']) ? $settings['group_video']['image_style_video'] : '' ,
             );
         }
         if($item['type'] == 'image') {
             $element = array(
                 '#theme' => 'mod_magnific_image',
                 '#items' => $items,
-                '#animate_style' => $settings['group_image']['animate_image'],
-                '#image_style_image' => $settings['group_image']['image_style_image'],
+                '#animate_style' => isset($settings['group_image']['animate_image']) ? $settings['group_image']['animate_image'] : '' ,
+                '#image_style_image' => isset($settings['group_image']['image_style_image']) ? $settings['group_image']['image_style_image'] : ''  ,
             );
         }
     }
