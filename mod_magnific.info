@@ -1,0 +1,7 @@
+name = Module format file
+description = Provide field formatter file to show
+package = Custom module - Required
+core = 7.x
+dependencies[] = field
+dependencies[] = media_youtube
+version = "1.0"
